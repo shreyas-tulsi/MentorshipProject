@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--Initial styling is  used in order to remove the need of centering each h3, and h1 tag manually in the html code-->
+
+    <style>
+      h3, h1{
+        text-align: center;
+        
+        
+      }
+      .container{
+        color: black;
+      }
+      
+     
+      </style>
+    
+    <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="Highschool.html"> Students</a>
+         <a class="nav-item nav-link" href="Mentor.html"> Mentors</a>
+         <a class="nav-item nav-link"  href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link" href="Last_ContactMe.html"> Contact Me</a>
+        
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+<code>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char*argv[])
+{
+  fprintf(stdout,"%s",argv[0]);
+  FILE * input1 = fopen("input1.txt","w");
+  char * mode = argv[1];
+  fwrite(mode,1,10,input1);
+  system("python3 Test.py");
+}
+
+
+</code>
